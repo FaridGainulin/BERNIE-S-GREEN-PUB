@@ -1,0 +1,159 @@
+.finances-section
+  background-color $color-green
+  position relative
+  z-index 1
+  &:after
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 10px;
+    filter: blur(30px);
+    background-color: #1b4b33;
+    top: 0px;
+    +above($breakpoints.md)
+      filter: blur(17px);
+      height: 50px
+      top: -25px
+
+  &__container
+    position relative
+    padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      padding 40px 0 50px 0
+    +above($breakpoints.md)
+      padding 50px 0 50px 0
+    +above($breakpoints.xxl)
+      padding 62px 0 70px 0
+
+  &__title
+    padding-bottom: 20px
+    +above($breakpoints.sm)
+      padding-bottom: 40px
+    +above($breakpoints.md)
+      padding-bottom: 60px
+    +above($breakpoints.xxl)
+      padding-bottom: 70px
+
+  &__cards
+    +above($breakpoints.sm)
+      position relative
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content space-between
+      gap: 20px
+    +above($breakpoints.md)
+      column-gap: 50px
+      row-gap: 20px
+    +above($breakpoints.xxl)
+      row-gap: 19px
+
+  &__card
+    width 280px !important
+    padding 30px 0 33px 0
+    background-color transparent
+    border: 1px solid $color-yellow
+    border-radius: 30px
+    +above($breakpoints.sm)
+      width 350px !important
+    +above($breakpoints.md)
+      width 320px !important
+      padding: 25px 0 31px 0;
+    +above($breakpoints.xxl)
+      padding 30px 0 33px 0
+      width 380px !important
+
+  &__line
+    width 148px
+    height: 1px
+    background-color $color-yellow
+    margin 28px auto
+    +above($breakpoints.md)
+      margin: 15px auto
+    +above($breakpoints.xxl)
+      margin 28px auto
+
+  &__img
+    width 300px
+    height: auto
+    border-radius: 30px
+    margin 20px auto
+    +above($breakpoints.md)
+      margin 0
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -80.5%)
+    +above($breakpoints.xxl)
+      margin 0
+      width 380px
+      transform: translate(-50%, -77%)
+
+  &__bottom
+    display: flex
+    flex-direction: row
+    justify-content center
+    +above($breakpoints.sm)
+      padding-top 40px
+    +above($breakpoints.md)
+      justify-content space-between
+      padding-top 60px
+    +above($breakpoints.xxl)
+      padding-top 77px
+
+  &__bottom-lines
+    display: none
+    +above($breakpoints.md)
+      display: flex
+      flex-direction: column
+      justify-content center
+      gap: 33px
+
+  &__bottom-line
+    width: 150px
+    height: 1px
+    background-color $color-yellow
+    +above($breakpoints.xxl)
+      width: 218px
+
+  &__bottom-content
+    width 100%
+    max-width: 647px
+    text-align: center
+    width 100%
+    max-width: 647px
+    border 1px solid $color-yellow
+    border-radius: 20px
+    padding 20px 10px 20px 10px
+    +above($breakpoints.sm)
+      border-radius: 50px
+      padding 30px 0 30px 0
+    +above($breakpoints.md)
+      border-radius: 100px
+      padding 50px 0 50px 0
+    +above($breakpoints.xxl)
+      padding 65px 0 55px 0
+
+  &__bottom-title
+    padding-bottom 20px
+    +above($breakpoints.sm)
+      padding-bottom 40px
+    +above($breakpoints.md)
+      padding-bottom 50px
+
+  &__form
+    display: flex
+    flex-direction: column
+    justify-content center
+    align-items: center
+    gap: 7px
+    padding-top 20px
+    +above($breakpoints.sm)
+      padding-top 30px
+      flex-direction: row
+
+.finances-item
+  width 250px !important
+  +above($breakpoints.sm)
+    width 166px !important

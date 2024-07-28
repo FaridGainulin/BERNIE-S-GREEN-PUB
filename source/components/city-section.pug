@@ -1,0 +1,21 @@
+section.city-section
+  .wrapper
+    .city-section__container
+      .city-section__box
+        h2.city-section__title.font-w-ledger.font-s-64.text-up
+          | Откройте паб
+          br
+          | по франшизе
+          br
+          span.mark-yellow «BERNIE'S PUB»
+        .city-section__sub-title.font-w-ledger.font-s-32
+          | и получайте от 1  100  000 рублей
+          br
+          | чистой прибыли ежемесячно
+        .city-section__bottom
+          .font-w-ledger.font-s-32.text-center.mark-yellow Проверьте, свободен ли ваш <br> город для работы
+          form.city-section__form(data-feedback-form)
+            input.input.city-item(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+            input.input.city-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+            button.btn.city-item(type="submit") проверить
+      img.city-section__img(src="images/city-section-img.png" loading="lazy" width="618" height="765" alt="image")

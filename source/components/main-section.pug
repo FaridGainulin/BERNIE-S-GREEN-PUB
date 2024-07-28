@@ -1,0 +1,16 @@
+section.main-section
+  .wrapper
+    .main-section__container.text-center
+      include ../components/header.pug
+      h1.main-section__title.font-w-ledger.font-s-54.text-up.mark-yellow
+        | Откройте популярный паб <br>
+        | в английском стиле
+      img.main-section__lines(src="images/main-section-lines.svg" loading="lazy" width="388" height="12" alt="lines")
+      .main-section__sub-title.font-w-ledger.font-s-38
+        | с прибылью от 1,1 млн рублей в месяц
+      .main-section__bottom
+        .font-s-24 Получите пошаговый план запуска паба <br> в вашем городе за 2,5 месяца
+        form.main-section__form(data-feedback-form)
+          input.input.main-item(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input.main-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn.main-item(type="submit") Получить

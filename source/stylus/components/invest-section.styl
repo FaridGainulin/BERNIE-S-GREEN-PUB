@@ -1,0 +1,87 @@
+.invest-section
+
+  &__container
+    position relative
+    text-align: center
+    padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      padding 40px 0 40px 0
+    +above($breakpoints.md)
+      padding 60px 0 60px 0
+    +above($breakpoints.xxl)
+      padding 89px 0 79px 0
+
+  &__sub-title
+    color: $color-grey
+    padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      padding 25px 0 40px 0
+    +above($breakpoints.md)
+      padding 35px 0 55px 0
+    +above($breakpoints.xxl)
+      padding 41px 0 66px 0
+
+
+  &__cards
+    display: flex
+    justify-content space-between
+
+  &__card
+    width 280px !important
+    padding 25px 10px 20px 10px
+    border-radius: 20px
+    background-color $color-green
+    +above($breakpoints.sm)
+      padding 38px 23px 20px 23px
+      border-radius: 50px
+      width 380px !important
+    +above($breakpoints.md)
+      width 310px !important
+      padding 25px 10px 20px 10px
+      border-radius: 20px
+    +above($breakpoints.xxl)
+      padding 38px 23px 20px 23px
+      border-radius: 50px
+      width 380px !important
+
+
+  &__card-item-2
+    padding-bottom 20px
+    +above($breakpoints.md)
+      padding-bottom 28px
+
+  &__line-white
+    width 50px
+    height: 1px
+    background-color #fff
+    margin 20px auto
+
+  &__line-yellow
+    width 100%
+    max-width 331px
+    height: 1px
+    background-color $color-yellow
+    margin 25px auto 20px
+
+  &__form
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content center
+    gap: 8px
+    padding-top 20px
+    +above($breakpoints.xxl)
+      column-gap: 6px
+      row-gap: 17px
+      flex-direction: row
+      flex-wrap: wrap
+
+.invest-item
+  width 250px !important
+  +above($breakpoints.sm)
+    width 334px !important
+  +above($breakpoints.md)
+    width 290px !important
+  +above($breakpoints.xxl)
+    height: 45px
+    width 164px !important
